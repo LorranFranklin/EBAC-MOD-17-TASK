@@ -52,5 +52,7 @@ Após isso criaremos as pastas `src` que irá conter `styles`. Depois criaremos 
 ```
 npm run less
 ```
-
-parei na transformação de style css no main.less e seus demais arquivos
+## Trocando as cores do svg em images
+Vamos abrir o ```svg``` como arquivo de texto.  
+Vamos até o ```svg```, clicamos com o ```botão direito do mouse```, ```abri com```, ```editor de texto```
+Após isso vamos procurar por: ```stroke="#44bd32"``` e colocamos a cor de nossa escolha.
