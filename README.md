@@ -17,31 +17,40 @@
 ## Após isso iniciamos o git com os arquivos disponibilizados e abertos no vs code.
 
 ## Instalando o less no nosso projeto
+
 ```
 npm install --save-dev less
 ```
 
 ## Iniciando o less
+
 ```
 npm init
 ```
+
 ## Daremos enter nas perguntas que irão nos aparecer
 
 ## Instalando whatch compiler
+
 ```
 npm i --save-dev less-watch-compiler
 ```
 
-## Agora vamos mudar o script em ```package.json``` precisamos criar o caminho, suas pastas e arquivo.
+## Agora vamos mudar o script em `package.json` precisamos criar o caminho, suas pastas e arquivo.
+
 ```
   "scripts": {
     "less": "less-watch-compiler ./src/styles ./build/styles main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 ```
-Após isso criaremos as pastas ```src``` que irá conter ```styles```. Depois criaremos ```build``` que irá conter ```styles``` e o arquivo que será compilado será o ```main.less```. O Caminho deve ser o mesmo do script acima.
+
+Após isso criaremos as pastas `src` que irá conter `styles`. Depois criaremos `build` que irá conter `styles` e o arquivo que será compilado será o `main.less`. O Caminho deve ser o mesmo do script acima.
 
 ## Vamos ao terminal
+
 ```
 npm run less
 ```
+
+parei na transformação de style css no main.less e seus demais arquivos
