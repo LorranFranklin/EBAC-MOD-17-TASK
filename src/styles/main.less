@@ -1,16 +1,12 @@
 @import 'reset.less';
 @import 'variaveis.less';
-// @import 'mapas.less';
+@import 'mapas.less';
 
 @breakpointMobile: ~'(max-width: 767px)';
 @breakpointTablet: ~'(min-width: 768px) and (max-width: 1023px)';
 
-.marginBottom32 {
-  margin-bottom: 32px;
-}
-
 body {
-  background-color: @backgroundColor;
+  background-color: #colors[backgroundColor];
 }
 
 li {
@@ -25,15 +21,12 @@ li {
 
 @media @breakpointTablet {
   header {
-    padding: 0 16px;
+    padding: @padding16;
   }
   .container {
-    padding: 0 16px;
-    .marginBottom32() !important;
+    padding: @padding16;
+    margin-bottom: @marginBottom32 !important;
   }
-  // section {
-  //   height: 80vh !important;
-  // }
   section .products {
     grid-template-columns: repeat(2, 48.5%) !important;
     column-gap: 3% !important;
@@ -42,17 +35,17 @@ li {
 
 @media @breakpointMobile {
   header {
-    padding: 0 16px;
+    padding: @padding16;
   }
   .container {
-    padding: 0 16px;
+    padding: @padding16;
   }
   .products {
     display: block !important;
   }
 
   .product-item {
-    .marginBottom32();
+    margin-bottom: @marginBottom32 !important;
   }
   footer {
     margin-bottom: 16px;
@@ -60,7 +53,7 @@ li {
 }
 
 header {
-  background-color: @corFundoHeader;
+  background-color: #colors[corFundoHeader];
   position: sticky;
   top: 0;
   left: 0;
@@ -79,7 +72,7 @@ header {
         margin-left: 24px;
       }
       a {
-        color: @corTextoBotoes;
+        color: #colors[cortextobotoes];
         text-decoration: none;
       }
     }
@@ -105,19 +98,19 @@ section {
 
   .product-button {
     display: block;
-    background-color: @corBotoes;
+    background-color: #colors[corbotoes];
     color: #fff;
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
     margin-top: 8px;
     text-decoration: none;
-    border: 2px solid @corBotoes;
+    border: 2px solid #colors[corbotoes];
     transition: all ease 0.5s;
 
     &:hover {
       background-color: transparent;
-      color: @corBotoes;
+      color: #colors[corbotoes];
     }
   }
 }
